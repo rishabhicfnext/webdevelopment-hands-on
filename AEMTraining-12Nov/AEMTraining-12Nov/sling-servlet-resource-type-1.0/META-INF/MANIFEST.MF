@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:sling-servlet-resource-type:1.0
+Content-Package-Roots: /apps/weretail/components/content/weather,/conten
+ t/we-retail/us/en/example-page
+Content-Package-Type: mixed
+

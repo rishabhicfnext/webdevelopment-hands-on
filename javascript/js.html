@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>zoomba</p>
+    <script>
+      let name = "rishabh";
+      console.log("name : " + name);
+
+      let names = "rishabh nigam";
+      console.log(names.slice(0, 7));
+
+      console.log(names.slice(0, 5));
+      console.log(names.slice(-5));
+
+      const word = "skateboard"; //Don't change this line!
+
+      // YOUR CODE BELOW THIS LINE:
+      let facialHair = word.slice(-5).replace("o", "e");
+      console.log(facialHair);
+
+      // string literals
+      // use back-tip `
+      let str = `I am ${18 + 6} year old`;
+      console.log(str);
+
+      console.log(Math.PI);
+      console.log(Math.floor(Math.random() * 100));
+
+      // triple and double equal
+      let str1 = 7;
+      let str2 = "7";
+      console.log("Comparison :");
+      console.log(str1 == str2); // true
+      console.log(str1 === str2); // false
+      console.log(0 == false); // true
+      console.log(0 === false); //false
+      console.log(1 == true); // true
+      console.log(1 === true); // false
+
+      //   console.log(prompt("please enter dob : "));
+
+      //   let number = prompt("please enter a number : ");
+      //   console.log(parseInt(number));
+
+      // if - else condition start
+      let random = Math.floor(Math.random() * 10);
+      if (random < 6) {
+        console.log("your number is less than 6!!");
+        console.log(random);
+      } else {
+        console.log("your number is greater than 6!!");
+        console.log(random);
+      }
+
+      // javascript array
+      let city = [
+        "kanpur",
+        "lucknow",
+        "banglore",
+        "mysore",
+        "hydrabad",
+        "maharastra",
+      ];
+      console.log(city);
+      console.log(city[0]);
+
+      // javascript array used as a stack
+      let ar = [8, 3, 0, 3, 9, 7, 4, 4];
+      ar.push(1);
+      ar.push(1);
+      ar.pop();
+      console.log(ar);
+
+      // shift() is used for deleting element in starting
+      // unshift() is used for add element in start
+      console.log("Deleted number is : " + ar.shift());
+      console.log(ar);
+      console.log("Added number is : " + ar.unshift(8));
+      console.log(ar);
+      console.log("sorted array is : " + ar.sort());
+      console.log("Reverse array is : " + ar.reverse());
+      console.log("making array as a string using join : " + ar.join(" "));
+      let colors = ["red", "orange", "yellow", "green", "blue", "violet"];
+      console.log(colors);
+      console.log("After using slice : " + colors.slice(3));
+      console.log("using splice() : " + colors.splice(1, 0, "red-orange"));
+      console.log(colors);
+      console.log(colors.splice(2, 2, "DELETED!!"));
+
+      // working with objects
+      let details = {
+        name: "rishabh",
+        city: "kanpur",
+        gender: "male",
+        country: "india",
+      };
+      console.log("Details is : ");
+      console.log(details);
+      console.log("Name : " + details["name"]);
+      console.log("Person City is : " + details.city);
+
+      // practice
+      const restaurant = {
+        name: "Ichiran Ramen",
+        address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+        city: "Brooklyn",
+        state: "NY",
+        zipcode: "11206",
+      };
+      console.log(restaurant);
+
+      // for of loop its just like a for each loop
+      let ar1 = [8, 3, 0, 3, 9, 7, 4, 4];
+      for (let x of ar1) {
+        console.log(x);
+      }
+
+      // javascript function
+      function rollDie() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+      let die1 = rollDie();
+      let die2 = rollDie();
+      let die3 = rollDie();
+      let die4 = rollDie();
+      let die5 = rollDie();
+      let die6 = rollDie();
+      console.log("Die start : ");
+      console.log(die1);
+      console.log(die2);
+      console.log(die3);
+      console.log(die4);
+      console.log(die5);
+      console.log(die6);
+
+      // try catch
+      function print(msg) {
+        try {
+          console.log(msg.toUpperCase().repeat(3));
+        } catch (error) {
+          console.log("please pass string correctly");
+        }
+      }
+      print(123);
+
+      // arroy function
+      const square = (x) => {
+        return x * x;
+      };
+      console.log(square(11));
+
+      //same as this function
+      const sq = function (w) {
+        return w * w;
+      };
+      console.log(sq(12));
+
+      // or same as
+      const squ = (n) => {
+        return n * n;
+      };
+      console.log(squ(13));
+
+      // setTimeout or setInterval method is just like a sleep function
+      setTimeout(() => {
+        console.log("hello !!");
+      }, 2000);
+
+      const id = setInterval(() => {
+        console.log("rishabh");
+      }, 3000); // it will run continuously
+      // for stop use
+      clearInterval(id);
+
+      //spread operator (...)
+      let stri = "Rishabh";
+      console.log(...stri);
+      const dataform = {
+        email: "rishabh@gmail.com",
+        password: "qwerty",
+        username: "rishabh",
+      };
+      console.log(dataform);
+      const newUser = { ...dataform, id: 55683, isAdmin: false };
+      console.log(newUser);
+
+      // Rest operator (...) this is just like a variable argument VARARGS
+      function sum(...num) {
+        return num.reduce((total, el) => total + el);
+      }
+      console.log(sum(2, 4, 6));
+
+      // Array destructing
+      const raceResult = [11, 22, 33, 44, 55, 66, 77];
+      const [first, second, third] = raceResult;
+      console.log("first : " + first);
+      console.log("second : " + second);
+      console.log("third : " + third);
+
+      // Query selector
+      const links = document.querySelectorAll("head");
+
+      for (let link of links) {
+        console.log(link);
+      }
+
+      // innerHtml is used for reading contect of html which is in inside tag
+
+      var content = document.querySelector("p").innerHTML;
+      console.log(content);
+
+      // prototyping
+
+      var person = {
+        firstname: "Default",
+        lastname: "Default",
+        getFullName: function () {
+          return this.firstname + " " + this.lastname;
+        },
+      };
+
+      var naam = {
+        firstname: "rishabh",
+        lastname: "nigam",
+      };
+
+      // double underscore
+      naam.__proto__ = person;
+      console.log(naam.getFullName());
+      console.log(naam.lastname);
+
+      String.prototype.isLengthGreaterThan = function (limit) {
+        return this.length > limit;
+      };
+
+      console.log("rishabh".isLengthGreaterThan(4));
+
+      Number.prototype.isPositive = function () {
+        return this > 0;
+      };
+      // first create number object then only you can pass
+      var aa = new Number();
+      aa = -3;
+      // here aa is a object of type Number
+      // var x = 3;  here x is a primitive
+      // or
+      // var aa = new Number(3);
+      console.log(aa.isPositive());
+
+      // JSON object creation
+
+      var jsonObject = [
+        {
+          firstname: "abc",
+          lastname: "xyz",
+          address: { city: "pqr", state: "up" },
+        },
+        {
+          firstname: "rishu",
+          lastname: "nigam",
+          address: ["kanpur", "up"],
+        },
+      ];
+      console.log(jsonObject);
+
+      console.log("converted json format");
+      // convert this to json format like API does
+      console.log(JSON.stringify(jsonObject));
+    </script>
+  </body>
+</html>

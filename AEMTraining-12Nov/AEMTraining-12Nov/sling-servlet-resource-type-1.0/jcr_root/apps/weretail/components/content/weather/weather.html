@@ -1,0 +1,9 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='we-retail.components.weather'}"></sly>
+</sly>
+<a id="weather" data-sly-use.button="we.retail.core.model.Button"
+   class="btn btn-primary btn-action cq-dd-linkTo ${button.cssClass}" onclick="return getWeather()"
+   data-weather-path="${resource.path}.bangalore.json" role="button">${properties.label}</a>
+<div id="city"></div>
+<div id="city-weather"></div>
+<div id="city-windspeed"></div>

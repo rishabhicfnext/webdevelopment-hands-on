@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  color: firebrick;
+  letter-spacing: 5px;
+  font-family: monospace;
+}
+form {
+  text-align: center;
+}
+button {
+  color: teal;
+}
+u {
+  text-decoration-style: wavy;
+  font-size: 30;
+}

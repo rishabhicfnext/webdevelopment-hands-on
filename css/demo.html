@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDeveloper Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body bgcolor="yellow">
+    <main>
+      <section>
+        <h1>Html Form</h1>
+        <hr />
+        <h1>
+          <u><b>Form Demo</b></u>
+        </h1>
+        <form action="/submit" class="id">
+          <div>
+            <label for="name">Enter name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="enter text here"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="password">Enter password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="enter password here"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="color">Choose color</label>
+            <input
+              type="color"
+              id="color"
+              placeholder="choose color"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="number">Enter number</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="enter number here"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="email">Enter email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="enter email here"
+              required
+            /><br />
+          </div>
+          <div>
+            <input
+              type="range"
+              name="valume"
+              id=""
+              min="0"
+              max="10"
+              required
+            /><br />
+          </div>
+          <div>
+            <input type="submit" value="click me" />
+          </div>
+        </form>
+
+        <hr />
+
+        <form action="https://www.google.com/search">
+          <h1>Search in google</h1>
+          <input type="text" name="q" required />
+          <button>search google</button>
+        </form>
+
+        <hr />
+
+        <form action="https://www.youtube.com/results">
+          <h1>Search in youtube</h1>
+          <input
+            type="text"
+            name="search_query"
+            minlength="4"
+            maxlength="20"
+            required
+          />
+          <button>search youtube</button>
+        </form>
+        <hr />
+        <h1>CSS Started from here...</h1>
+      </section>
+    </main>
+  </body>
+</html>

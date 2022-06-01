@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2021-11-16T03:36:23.677+05:30"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2021-11-16T03:36:23.677+05:30"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="2"
+    builtWith="Adobe Experience Manager-6.5.7.0"
+    group="my_packages"
+    lastUnwrapped="{Date}2021-11-16T03:36:23.677+05:30"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2021-11-16T03:36:23.677+05:30"
+    lastWrappedBy="admin"
+    name="sling-servlet-resource-type"
+    version="1.0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/we-retail/us/en/example-page"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/weretail/components/content/weather"
+            rules="[]"/>
+    </filter>
+</jcr:root>
